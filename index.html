@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        referrerpolicy="no-referrer" />
+
+
+
+
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="#home"><span>Gustavo</span>Sales</a>
+                </div>
+                <div class="list-darkmode-menu">
+                    <ul>
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#conhecimentos">Conhecimentos</a></li>
+                        <li><a href="#portfolio">Projetos</a></li>
+                        <li><a href="#contact">Contatos</a></li>
+                    </ul>
+                    <div class="menu-overlay"></div>
+                    <label class="mode">
+                        <input type="checkbox" checked="checked" id="darkModeButton" />
+                        <i class="fa-solid fa-sun"></i>
+                        <i class="fa-solid fa-moon"></i>
+                    </label>
+                    <button class="hamburger">
+                        <div class="bar"></div>
+                    </button>
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <section id="home" class="home">
+        <div class="container">
+            <div class="home-info">
+                <div class="left">
+                    <h3>Olá, Eu sou</h3>
+                    <h1>Gustavo Sales</h1>
+                    <h4>e eu sou um <span class="multiple"></span></h4>
+                    <p>
+                        Olá! Sou estudante de Ciência da Computação e desenvolvedor em formação, com foco em aplicações
+                        web. Gosto de transformar ideias em soluções funcionais, atuando no frontend com React e
+                        explorando integração com backend e segurança.
+                    </p>
+                    <div class="social">
+                        <a href="https://github.com/gustavo-security" target="_blank" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/Gust4voSS" target="_blank" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/seuusuario" target="_blank" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                    <div class="btn">
+                        <button id="downloadCV">Download CV</button>
+                    </div>
+
+                </div>
+                <div class="right">
+                    <div class="profile">
+                        <img src="imagens/profile1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-left">
+                    <div class="about-img">
+                        <img src="imagens/profile1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="about-right">
+                    <div class="about-info">
+                        <h2>Sobre <span>mim</span></h2>
+                        <h3>Estudante de Ciência da Computação</h3>
+                        <P>
+                            Sou estudante de Ciência da Computação, com foco em desenvolvimento de software e aplicações
+                            web. Tenho experiência com React no frontend e backend em Java com Spring Boot, incluindo
+                            autenticação com JWT, além de interesse e estudos iniciais em cibersegurança, buscando
+                            desenvolver soluções bem estruturadas, seguras e funcionais.
+
+                            No momento, busco uma oportunidade de estágio onde eu possa aprender na prática, colaborar
+                            com o time e evoluir tecnicamente, contribuindo com soluções bem estruturadas e código de
+                            qualidade.
+                        </P>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="conhecimentos" class="conhecimentos">
+        <div class="container">
+            <h2>Meus <span>Conhecimentos</span></h2>
+
+            <p class="conhecimentos-desc">
+                Tecnologias e ferramentas que utilizo no desenvolvimento de projetos,
+                aplicando boas práticas e foco em soluções eficientes.
+            </p>
+
+            <div class="conhecimentos-content">
+                <div class="conhecimentos-info">
+                    <h3>O que eu sei?</h3>
+                    <p id="conhecimentos-text">
+                        Possuo experiência no desenvolvimento de aplicações web, com foco em lógica de programação,
+                        organização de código e integração entre frontend e backend, além de estudos iniciais em
+                        cibersegurança aplicada.
+                    </p>
+
+                    <div class="toggle">
+                        <div class="toggle-bg"></div>
+                        <button class="toggle-btn active" data-type="skills">Habilidades</button>
+                        <button class="toggle-btn" data-type="tools">Ferramentas</button>
+                    </div>
+
+                </div>
+
+
+                <div class="conhecimentos-icons" id="conhecimentos-icons">
+                    <i class="fa-brands fa-html5" data-tooltip="HTML5"></i>
+                    <i class="fa-brands fa-css3-alt" data-tooltip="CSS3"></i>
+                    <i class="fa-brands fa-js" data-tooltip="JavaScript"></i>
+                    <i class="fa-brands fa-java" data-tooltip="Java"></i>
+                    <i class="fa-brands fa-python" data-tooltip="Python"></i>
+                    <i class="fa-solid fa-c" data-tooltip="C"></i>
+                    <i class="fa-solid fa-database" data-tooltip="SQL"></i>
+                    <i class="fa-brands fa-react" data-tooltip="React"></i>
+                    <i class="fa-brands fa-node-js" data-tooltip="Node.js"></i>
+                    <i class="fa-brands fa-npm" data-tooltip="NPM"></i>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Últimos <span>Projetos</span></h2>
+            <div class="portfolio-wrapper">
+                <div class="portfolio-box">
+                    <img src="imagens/task-manager.png" alt="">
+
+                    <div class="portfolio-info">
+                        <h4>Task Manager</h4>
+                        <p>
+                            Aplicação Full Stack para gerenciamento de tarefas, desenvolvida com
+                            Java + Spring Boot no backend e React no frontend, com autenticação de usuários
+                            e CRUD completo.
+                        </p>
+                        <a href="https://github.com/gustavo-security/Task-Manager-Full-Stack" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="portfolio-box">
+                    <img src="imagens/owasp-api.png" alt="">
+
+                    <div class="portfolio-info">
+                        <h4>OWASP API Security Lab — IDOR</h4>
+                        <p>
+                            Laboratório educacional de segurança em APIs focado na exploração e mitigação de IDOR.
+                        </p>
+                        <a href="https://github.com/gustavo-security/Owasp-Api-Security-Lab" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="portfolio-box">
+                    <img src="imagens/python-scanner.png" alt="">
+
+                    <div class="portfolio-info">
+                        <h4>Python Security Scanner</h4>
+                        <p>
+                            Ferramenta em Python para análise e identificação de vulnerabilidades de segurança.
+                        </p>
+                        <a href="https://github.com/gustavo-security/Python-Security-Scanner" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="portfolio-box">
+                    <img src="imagens/movie-finder.png" alt="">
+
+                    <div class="portfolio-info">
+                        <h4>Movie Finder App</h4>
+                        <p>Aplicação em React que consome uma API pública para busca e exibição de informações sobre
+                            filmes.</p>
+                        <a href="https://github.com/gustavo-security/Movie-Finder-App-React"> <i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-box">
+                    <img src="imagens/todo-front.png" alt="">
+
+                    <div class="portfolio-info">
+                        <h4>To-Do App Front-end</h4>
+                        <p>Aplicação de gerenciamento de tarefas com operações CRUD, desenvolvida em JavaScript.</p>
+                        <a href="https://github.com/gustavo-security/To-Do-App-frontend"> <i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-box">
+                    <img src="imagens/todo-back.png" alt="">
+
+                    <div class="portfolio-info">
+                        <h4>To-Do App Back-end</h4>
+                        <p>API REST para gerenciamento de tarefas, desenvolvida em Java com Spring Boot.</p>
+
+                        <a href="https://github.com/gustavo-security/To-Do-App-Backend-API"> <i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contato</h2>
+
+            <form id="contact-form" action="https://formspree.io/f/SEU_ID_AQUI" method="POST">
+                <div class="input-box">
+                    <input type="text" name="name" placeholder="Nome Completo" required>
+                    <input type="email" name="email" placeholder="Endereço de email" required>
+                </div>
+
+                <div class="input-box">
+                    <input type="tel" name="phone" placeholder="(11) 91234-5678" pattern="\(\d{2}\)\s\d{4,5}-\d{4}">
+                    <input type="text" name="subject" placeholder="Assunto">
+                </div>
+
+                <textarea name="message" cols="30" rows="10" placeholder="Sua Mensagem" required></textarea>
+
+                <button type="submit">Enviar Mensagem</button>
+                <p id="form-success" class="form-success">
+                    ✅ Mensagem enviada com sucesso! Em breve entrarei em contato.
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-info">
+                    <p>Copyrigth &copy; 2025 by Gustavo Sales | Todos os Direitos Reservados.</p>
+                </div>
+                <div class="iconTop">
+                    <a href="#home">
+                        <i class="fa-solid fa-arrow-up"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="main.js"></script>
+</body>
